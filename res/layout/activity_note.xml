@@ -1,0 +1,99 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/back"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/noteTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_time_back"
+            android:gravity="center"
+            android:text="14:00" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_background_red_"
+            android:onClick="onClick_NewEnty"
+            android:text="Note" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="133dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_note_back"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/tvShowNote"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:paddingLeft="5dp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etAddNote"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@drawable/ic_note_back"
+            android:gravity="center"
+            android:hint="Add Note"
+            android:textColor="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.74"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="10dp" >
+
+            <ImageButton
+                android:id="@+id/Previous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_previous" 
+                android:onClick="OnClick_Feeling"
+                />
+
+            <TextView
+                android:layout_width="86dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:background="@drawable/ic_note"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick_AddNote"
+                android:text="Add Note" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:background="@drawable/custom_background_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick_Home"
+                android:text="Home"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

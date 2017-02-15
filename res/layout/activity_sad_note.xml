@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.saad.theglucoseonthego.SadNoteActivity" >
+
+      <Button
+          android:id="@+id/sadNoteTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/ic_time_back"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="14:00" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_background_red_"
+        android:onClick="onClick_NewEnty"
+        android:text="Note" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/ic_note_back"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="2dp"
+            android:gravity="center_horizontal"
+            android:paddingLeft="5dp"
+            android:text="15/1/2015"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="2dp"
+            android:paddingLeft="5dp"
+            android:text="* Keep drinking water"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="2dp"
+            android:paddingLeft="5dp"
+            android:text="* Sleep on time"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="2dp"
+            android:paddingLeft="5dp"
+            android:text="* Stick to the recommended diet"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_note"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick_Back"
+            android:text="Back" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_background_white"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick_Home"
+            android:text="Home" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,153 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.saad.theglucoseonthego.ExerciseActivity" >
+
+    <Button
+        android:id="@+id/exerciseTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:background="@drawable/ic_time_back"
+        android:padding="10dp"
+        android:text="14:00"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_background_red_"
+        android:gravity="center"
+        android:text="Recommended Exercise" />
+
+    <TextView
+        android:id="@+id/tvCaloriesRequired"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_white"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#ff0000"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/etExerciseWeight"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_white"
+        android:gravity="center"
+        android:hint="Enter Weight"
+        android:inputType="number"
+        android:padding="5dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/etExerciseCals"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_white"
+        android:gravity="center"
+        android:hint="Enter Cals"
+        android:inputType="number"
+        android:padding="5dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/etExerciseTime"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_white"
+        android:gravity="center"
+        android:hint="Enter time"
+        android:inputType="number"
+        android:padding="5dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_background_red_"
+        android:onClick="onClick_Submit"
+        android:padding="5dp"
+        android:text="Calculate Time"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ic_go"
+            android:onClick="startTimer"
+            android:text="Start"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btnStopWatch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ic_time_back"
+            android:textColor="@color/black" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ic_go"
+            android:onClick="stopTimer"
+            android:text="Stop"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imgstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_start_mid"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/custom_background_white"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick_Home"
+            android:padding="10dp"
+            android:text="Home"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+</LinearLayout>

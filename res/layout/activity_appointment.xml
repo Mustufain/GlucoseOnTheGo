@@ -1,0 +1,297 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.saad.theglucoseonthego.AppointmentActivity" >
+
+        <Button
+            android:id="@+id/appointmentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_time_back"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="14:00"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_background_red_"
+            android:gravity="center"
+            android:text="Health Recommendation" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_white"
+                android:gravity="center"
+                android:text="D.O.B"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/etDOB"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:layout_weight="2"
+                android:background="@drawable/ic_white"
+                android:gravity="center"
+                android:hint="9/9/1976"
+                android:inputType="date"
+                android:padding="3dp"
+                android:textColor="@color/black" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_white"
+                android:gravity="center"
+                android:text="Gender"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/etGender"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:layout_weight="2"
+                android:background="@drawable/ic_white"
+                android:gravity="center"
+                android:hint="F/M"
+                android:inputType="text"
+                android:padding="3dp"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_white"
+                android:gravity="center"
+                android:text="Pregnant"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/etPregnant"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:layout_weight="2"
+                android:background="@drawable/ic_white"
+                android:gravity="center"
+                android:hint="yes/no"
+                android:inputType="text"
+                android:padding="3dp"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_white"
+                android:gravity="center"
+                android:text="Smoker"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/etSmoker"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:layout_weight="2"
+                android:background="@drawable/ic_white"
+                android:gravity="center"
+                android:hint="yes/no"
+                android:padding="3dp"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_white"
+                android:gravity="center"
+                android:text="Annual hypoglycaemia"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/etAppHypo"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:layout_weight="2"
+                android:background="@drawable/ic_white"
+                android:gravity="center"
+                android:hint="0"
+                android:inputType="number"
+                android:padding="3dp"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_white"
+                android:gravity="center"
+                android:text="Annual hyperglycaemia"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/etAppHyper"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:layout_weight="2"
+                android:background="@drawable/ic_white"
+                android:gravity="center"
+                android:hint="0"
+                android:inputType="number"
+                android:padding="3dp"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:gravity="center|center_horizontal"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.49"
+                android:onClick="onClick_Previous"
+                android:src="@drawable/ic_previous" />
+
+            <TextView
+                android:layout_width="52dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:background="@drawable/custom_background_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick_Save"
+                android:text="Save"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="54dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:background="@drawable/ic_go"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick_HealthPlanner"
+                android:text="GO"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:layout_weight="1.36"
+                android:background="@drawable/custom_background_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick_Home"
+                android:text="Home"
+                android:textColor="@color/black" />
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClick_Next"
+                android:src="@drawable/ic_next" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

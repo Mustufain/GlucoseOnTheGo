@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <Button
+            android:id="@+id/selectExerciseTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_time_back"
+            android:padding="10dp"
+            android:text="14:00"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_background_red_"
+            android:gravity="center"
+            android:text="Recommended Exercise" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_white"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick_Swim"
+            android:text="Swimming"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_white"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick_Walk"
+            android:text="Walking"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_white"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick_Cycle"
+            android:text="Cycling"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+</ScrollView>

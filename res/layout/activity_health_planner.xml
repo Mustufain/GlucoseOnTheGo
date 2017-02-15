@@ -1,0 +1,381 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:padding="10dp"
+    tools:context="com.saad.theglucoseonthego.HealthPlannerActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/healthPlannerTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_time_back"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="14:00"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_background_red_"
+            android:gravity="center"
+            android:text="Health Recommendation" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_white"
+                android:gravity="center"
+                android:text="Blood Pressure"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/BP"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:layout_weight="2"
+                android:background="@drawable/ic_white"
+                android:gravity="center"
+                android:hint="dd-MM-yyyy"
+                android:inputType="date"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_white"
+                android:gravity="center"
+                android:text="Feet Checks"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/FC"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:layout_weight="2"
+                android:background="@drawable/ic_white"
+                android:gravity="center"
+                android:hint="dd-MM-yyyy"
+                android:inputType="date"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_white"
+                android:gravity="center"
+                android:text="Eye Checks"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/EC"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:layout_weight="2"
+                android:background="@drawable/ic_white"
+                android:gravity="center"
+                android:hint="dd-MM-yyyy"
+                android:inputType="date"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_white"
+                android:gravity="center"
+                android:text="Smoker Support"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/SS"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:layout_weight="2"
+                android:background="@drawable/ic_white"
+                android:gravity="center"
+                android:hint="dd-MM-yyyy"
+                android:inputType="date"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_white"
+                android:gravity="center"
+                android:text="Alcohol Support"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/AS"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:layout_weight="2"
+                android:background="@drawable/ic_white"
+                android:gravity="center"
+                android:hint="dd-MM-yyyy"
+                android:inputType="date"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_white"
+                android:gravity="center"
+                android:text="Family Planning"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/FP"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:layout_weight="2"
+                android:background="@drawable/ic_white"
+                android:gravity="center"
+                android:hint="dd-MM-yyyy"
+                android:inputType="date"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_white"
+                android:gravity="center"
+                android:text="Psychological Support"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/PS"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:layout_weight="2"
+                android:background="@drawable/ic_white"
+                android:gravity="center"
+                android:hint="dd-MM-yyyy"
+                android:inputType="date"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_white"
+                android:gravity="center"
+                android:text="Check Kidney"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/CK"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:layout_weight="2"
+                android:background="@drawable/ic_white"
+                android:gravity="center"
+                android:hint="dd-MM-yyyy"
+                android:inputType="date"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_view"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick_Daily"
+                android:text="Daily View"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_view"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick_Weekly"
+                android:text="Weekly View"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_view"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick_Monthly"
+                android:text="Monthly View"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClick_Previous"
+                android:src="@drawable/ic_previous" />
+
+            <TextView
+                android:layout_width="77dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:background="@drawable/custom_background_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick_Save"
+                android:text="Save"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="74dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:layout_weight="0.43"
+                android:background="@drawable/custom_background_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick_Home"
+                android:text="Home"
+                android:textColor="@color/black" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClick_Next"
+                android:src="@drawable/ic_next" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.saad.theglucoseonthego"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    ...
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:parentActivityName=".LoginActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saad.theglucoseonthego.LoginActivity" />
+        </activity>
+        
+        <activity
+            android:name=".NewEntryActivity"
+            android:label="@string/title_activity_new_entry"
+            android:parentActivityName=".HomeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saad.theglucoseonthego.HomeActivity" />
+        </activity>
+        
+        <activity
+            android:name=".LineGraph"
+            android:label="@string/title_activity_new_entry"
+            android:parentActivityName=".HomeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saad.theglucoseonthego.NewEntryActivity" />
+        </activity>
+        
+        <activity
+            android:name=".MedicationActivity"
+            android:label="@string/title_activity_medication"
+            android:parentActivityName=".HomeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saad.theglucoseonthego.HomeActivity" />
+        </activity>
+        
+        <activity
+            android:name=".FeelingActivity"
+            android:label="@string/title_activity_feeling"
+            android:parentActivityName=".NewEntryActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saad.theglucoseonthego.NewEntryActivity" />
+        </activity>
+        
+        <activity
+            android:name=".DietActivity"
+            android:label="@string/title_activity_diet" >
+        </activity>
+        
+        <activity
+            android:name=".ExerciseActivity"
+            android:label="@string/title_activity_exercise" >
+        </activity>
+        <activity
+            android:name=".AppointmentActivity"
+            android:label="@string/title_activity_appointment" >
+        </activity>
+        <activity
+            android:name=".NoteActivity"
+            android:label="@string/title_activity_note" >
+        </activity>
+        <activity
+            android:name=".AppointmentDateActivity"
+            android:label="@string/title_activity_appointment_date" >
+        </activity>
+        <activity
+            android:name=".SadNoteActivity"
+            android:label="@string/title_activity_sad_note" >
+        </activity>
+        <activity
+            android:name=".AlertActivity"
+            android:label="@string/title_activity_alert" >
+        </activity>
+        <activity
+            android:name=".RepeatPresActivity"
+            android:label="@string/title_activity_repeat_pres" >
+        </activity>
+        <activity
+            android:name=".HealthPlannerActivity"
+            android:label="@string/title_activity_health_planner" >
+        </activity>
+        <activity
+            android:name=".AppointmentWeeklyActivity"
+            android:label="@string/title_activity_appointment_weekly" >
+        </activity>
+        <activity
+            android:name=".MonthlyViewActivity"
+            android:label="@string/title_activity_appointment_weekly" >
+        </activity>
+        <activity
+            android:name=".AppointmentMonthlyActivity"
+            android:label="@string/title_activity_appointment_monthly" >
+        </activity>
+        <activity android:name="com.saad.theglucoseonthego.SelectExerciseActivity" >
+        </activity>
+    </application>
+
+</manifest>
